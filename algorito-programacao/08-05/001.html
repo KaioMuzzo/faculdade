@@ -1,0 +1,35 @@
+<meta charset="UTF=8">
+<script>
+    const num = [];
+    const valores = [];
+
+    num[0] = 12;
+    num[1] = 15;
+    num[2] = 18;
+
+    document.write('Tamanho do array "num": ' + num.length);
+    document.write('<br>Tamanho do array "valores": ' + valores.length);
+
+    document.write('<br><br> Valor do primeiro elemento (num): ' + num[0]);
+    document.write('<br>O array todo: ' + num);
+
+    soma = num[0] + num[1];
+    document.write('<br><br> A soma é ' + soma);
+
+    num[0] = 33;
+    document.write('<br><br>O array todo: ' + num);
+
+    // num[0] = 44;
+    // document.write('<br><br>O array todo: ' + num);
+
+
+    for (i = 0; i < num.length; i++) {
+        num[i] = 44;
+    }
+
+    document.write('<br><br>O array todo: ' + num);
+
+    num[1] = 33;
+    valores[0] = num[1];
+    document.write('<br>O array "valores": ' + valores);
+</script>

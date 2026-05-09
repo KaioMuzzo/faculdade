@@ -1,0 +1,39 @@
+<meta charset="UTF=8">
+<script>
+    // crie um programa no qual o usuario deve informar dez numeros inteiros.
+    const num = [];
+    for (i = 0; i < 10; i++) {
+        num[i] = parseInt(window.prompt('Digite um número: '));
+    }
+
+    // apos isso devera ser exibida a lista de numeros pares entre os digitados, a soma desses numeros pares
+    // a lista de numeros impares entre os digitados bem como a soma desses numeros impares
+    let pares = 0;
+    let impares = 0;
+
+    document.write('Numeros pares: ');
+
+    for (i = 0; i < num.length; i++) {
+        if (num[i] % 2 == 0) {
+            // lista de numeros pares
+            document.write(num[i] + ', ');
+            // a soma desses numeros pares
+            pares += num[i];
+        }
+    }
+
+    document.write('<br>Numeros impares:');
+    for (i = 0; i < num.length; i++) {
+        if (num[i] % 2 != 0) {
+            // lista de numeros pares
+            document.write(num[i] + ', ');
+            // a soma desses numeros pares   
+            impares += num[i];
+        }
+    }
+
+    document.write('<br>');
+    document.write('Soma de numeros pares: ' + pares);
+    document.write('<br>');
+    document.write('Soma de numeros impares: ' + impares);
+</script>

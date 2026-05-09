@@ -1,0 +1,22 @@
+<meta charset="UTF=8">
+<script>
+    // crie um programa qno qual o usuario preenhca um arrey com 10 nomes de pessoas
+    const nomes = ['ALICE', 'BRUNO', 'CARLOS', 'DIANA', 'EDUARDO', 'FERNANDA', 'GABRIEL', 'HELENA', 'IGOR', 'JULIA'];
+    document.write(nomes);
+
+    //Em seguida o programa devera perguntar ao usuario qual nome deseja procurar e fazer a busca desse nome no array, mostrando se encontrou ou não o nome pesquisado.
+    nome_pesquisa = window.prompt('Qual nome deseja pesquisar?').toUpperCase();
+    achou = 0;
+
+    for (i = 0; i < nomes.length; i++) {
+        if (nomes[i] === nome_pesquisa) {
+            achou = 1;
+        }
+    }
+
+    if (achou == 1) {
+        document.write('O nome <strong>' + nome_pesquisa + '<strong> foi encontrado.');
+    } else {
+        document.write('O nome <strong>' + nome_pesquisa + '<strong> não foi encontrado.');
+    }
+</script>

@@ -1,0 +1,27 @@
+<meta charset="UTF=8">
+<script>
+    // crie um programa que peca ao usuario que digite cinco numeros inteiros
+    const num = [];
+
+    i = 0;
+    while (i < 5) {
+        num[i] = parseInt(window.prompt('Digite um numero')); // 73
+        i++;
+    }
+
+    // apos a digitacao dos cinco numeros eles devem ser exibidos em uma lista um abaixo do outro
+    i = 0;
+    while (i < num.length) {
+        document.write(num[i] + ', ');
+        i++;
+    }
+
+    document.write('<br>');
+
+    // tambem devera mostrar os cinco numeros na ordem inversa a da insercao um abaixo do outro
+    i = num.length - 1;
+    while (i >= 0) {
+        document.write(num[i] + ', ');
+        i--;
+    }
+</script>
