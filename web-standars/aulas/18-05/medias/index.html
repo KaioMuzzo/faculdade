@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            display: none;
+        }
+
+        @media (min-width: 401px) and (max-width: 800px) {
+            h1 {
+                display: inline;
+                font-size: 60px;
+                text-decoration: underline;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            body {
+                background-color: blue;
+                color: red;
+            }
+
+            h1 {
+                display: inline;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello Media Query!</h1>
+</body>
+</html>

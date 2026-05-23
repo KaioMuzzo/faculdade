@@ -1,0 +1,10 @@
+<script>
+    function converte(r, c) {
+        return r / c;
+    }
+
+    reais = Number(window.prompt("Quantos R$ você tem?"));
+    cotacao = Number(window.prompt("Quanto vale um dólar em R$?"));
+    dolares = converte(reais, cotacao);
+    document.write("Você tem US$ " + dolares);
+</script>

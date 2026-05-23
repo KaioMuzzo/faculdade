@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+<script>
+    function checkDivisibility(n, m) {
+        return n % m === 0;
+    }
+
+    num1 = Number(window.prompt("Digite um numero: "));
+    num2 = Number(window.prompt("Digite outro numero: "));
+    isDivisible = checkDivisibility(num1, num2);
+
+    if (isDivisible) {
+        document.write(num1 + " é divisivel por " + num2);
+    } else {
+        document.write(num1 + " não é divisivel " + num2);
+    }
+</script>

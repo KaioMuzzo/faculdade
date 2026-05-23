@@ -1,0 +1,12 @@
+<meta charset="UTF-8">
+<script>
+    function converte(me, c) {
+        return me * c;
+    }
+
+    moedaEstrangeira = Number(window.prompt("Quanta moeda estrangeira você tem?"));
+    cotacao = Number(window.prompt("Quanto vale em R$?"));
+    total = converte(moedaEstrangeira, cotacao);
+
+    document.write("Você tem R$ " + total);
+</script>
