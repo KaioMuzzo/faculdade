@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 40px;
+            display: flex;
+            gap: 50px;
+        }
+
+        .card {
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            transition: ease 0.3s;
+        }
+
+        .card:nth-child(odd) {
+            background-color: green;
+        }
+
+        .card:nth-child(even) {
+            background-color: purple;
+        }
+
+        .card:nth-child(odd):hover {
+            transition: ease 0.3s;
+            transform: scale(1.2) rotate(20deg);
+        }
+
+        .card:nth-child(even):hover {
+            transition: ease 0.3s;
+            transform: scale(1.2) rotate(-20deg);
+        }
+
+        .card:first-child {
+            background-color: aqua;
+        }
+
+        .card:last-child {
+            background-color: orange;
+            transition: ease 2.5s;
+        }
+
+        .card:last-child:hover {
+            background-color: orange;
+            animation: movimento 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes movimento {
+            0% {
+                transform: rotate(60deg);
+            }
+
+            100% {
+                transform: rotate(-60deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+</body>
+</html>
